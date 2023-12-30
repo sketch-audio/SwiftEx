@@ -30,7 +30,7 @@ public extension ClosedRange where Bound: BinaryFloatingPoint {
     /// Get the lower half range of the receiver. Does not include the midpoint.
     var lowerHalfRange: Self {
         get {
-            return self.lowerBound...self.midpoint
+            return self.lowerBound...self.midpoint.nextDown
         }
     }
 }
